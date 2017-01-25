@@ -1,2 +1,2 @@
-# react-examples
+# react examples
 just simple react applications
