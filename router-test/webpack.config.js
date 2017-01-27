@@ -2,7 +2,7 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: 'inline-source-map',
-  
+
   devServer: {
     historyApiFallback: true,
     contentBase: './'

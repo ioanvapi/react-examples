@@ -2,6 +2,11 @@
 var path = require('path');
 
 module.exports = {
+	
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './'
+  },	
 
   entry: path.resolve(__dirname, 'src') + '/app/index.js',
 

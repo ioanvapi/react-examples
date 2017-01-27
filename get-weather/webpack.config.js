@@ -40,7 +40,7 @@ module.exports = {
     loaders: [{
         loader: 'babel-loader',
         query: {
-          presets: ['react', 'es2015', 'stage-0']
+          presets: ['react', 'es2015', 'stage-2']
         },
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
