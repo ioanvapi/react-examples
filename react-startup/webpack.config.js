@@ -29,8 +29,8 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        loader: 'style!css'
+        test: /(\.css|\.scss)$/,
+        loaders: ['style', 'css', 'postcss', 'sass']
       }
     ]
   },
