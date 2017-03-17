@@ -5,13 +5,13 @@ import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 
 import User from './components/user';
 import Home from './components/home';
-import Root from './components/root';
+import App from './components/app';
 
-class App extends React.Component {
+class Wrapper extends React.Component {
   render() {
     return (
       <Router history={browserHistory}>
-        <Route path="/" component={Root}>
+        <Route path="/" component={App}>
           <IndexRoute component={Home}/>
           <Route path="home" component={Home}/>
           <Route path="user" component={User}/>
@@ -23,6 +23,6 @@ class App extends React.Component {
 
 
 ReactDOM.render(
-  <App />,
+  <Wrapper />,
   document.getElementById('root')
 );

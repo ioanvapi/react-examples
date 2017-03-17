@@ -1,15 +1,19 @@
 import React from 'react';
+import Header from './header';
 
-const App = (props) => {
-
-  // children are the components nested by Router into App in index.js
-  return (
-    <div>
-      <h2>React Router Simplest App</h2>
-      {props.children}
-    </div>
-  )
-};
+class App extends React.Component {
+  render() {
+    return (
+      <div className="container">
+        <div className="row col-xs-10 col-xs-offset-1">
+          <Header/>
+        </div>
+        <div className="row col-xs-10 col-xs-offset-1">
+          {this.props.children}
+        </div>
+      </div>
+    )
+  }
+}
 
 export default App;
-
